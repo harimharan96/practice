@@ -193,3 +193,131 @@
 // let b = a.splice(0, index);
 // a = a.concat(b)
 // console.log(a);
+
+
+// let a={
+//     name: "hari",
+//     age: 26
+// };
+// let b={
+//     name1: "raju",
+//     age1: 28
+// };
+// let c={
+//     ...a,
+//     ...b
+// }
+// // let c= Object.assign(a,b)
+// a.name="ravi"
+// console.log(c);
+// console.log(a);
+// console.log(b);
+
+
+
+//regEx
+
+// \d	Any digit character
+// \w	An alphanumeric character (“word character”)
+// \s	Any whitespace character (space, tab, newline, and similar)
+// \D	A character that is not a digit
+// \W	A nonalphanumeric character
+// \S	A nonwhitespace character
+
+// console.log(/[0123456789]/.test("in 1992"));
+// console.log(/[0-9]/.test("in 1992"));
+
+
+// let dateTime = /\d{1,2}-\d{1,2}-\d{4} \d{1,2}:\d{2}/;
+// console.log(dateTime.test("22-9-2022 8:45"));
+
+// let neighbor = /neighbou?r/;
+// console.log(neighbor.test("neighbour"));
+// console.log(neighbor.test("neighbor"));
+
+
+// let reg = /hari/; // This is a regular expression literal in js
+// reg = /hari/g; // g means global
+// reg = /hari/i; // i means case insensitive
+
+// console.log(reg);
+// console.log(reg.source);
+
+// let s = "This is great code with hari and also hari bhai";
+// Functions to match expressions
+// 1. exec() - This function will return an array for match or null for no match
+// let result = reg.exec(s);
+// result = reg.exec(s);
+// console.log(result);
+// result = reg.exec(s);
+// console.log(result); 
+
+// if (result) {
+//     console.log(result);
+//     console.log(result.input);
+//     console.log(result.index);
+// }
+
+// 2. test() - Returns true or false
+// let result2 = reg.test(s);
+// console.log(result2); 
+
+// 3. match() - It will return an array of results or null
+// let result3 = reg.match(s) ---> This is wrong!!
+// let result3 = s.match(reg) // ---> This is right
+// console.log(result3);
+
+// 4. search() - Returns index of first match else -1
+// let result4 = reg.search(s) ---> This is wrong!!
+// let result4 = s.search(reg) // ---> This is right
+// console.log(result4);
+
+// 5. replace() - Returns new replaced string with all the replacements (if no flag is given, first match will be replaced)
+
+// let result5 = s.replace(reg, 'SHUBHAM');
+// console.log(result5);
+
+// let regex = /harsdfgy/;
+// // Lets look into some metacharacter symbols
+// regex = /^hardc/; // ^ means expression will match if string starts with
+// regex = /hari$/; // $ at the end of the string means "string ends with"
+// regex = /h.ri/; //matches any one character
+// regex = /h*ri/; //matches any 0 or more characters
+// regex = /ha?ri?t/; //? after character means that character is optional
+// regex = /h\*ri/; //escape character
+
+// let str = "h*ri means codewith"; // 
+
+// let result = regex.exec(str);
+// console.log("The result from exec is ", result);
+
+// if(regex.test(str)){
+//     console.log(`The string ${str} matches the expression ${regex.source}`);
+// }
+// else{
+//     console.log(`The string ${str} does not match the expression ${regex.source}`);
+// }
+
+
+
+// // Character Sets - We use []
+// let regex = /h[a-z]rry/; // can be any character from a to z
+// regex = /h[aty]rry/; // can be an a, t or y
+// regex = /h[^aty]rry/; // cannot be any of a, t or y
+// regex = /h[^aty]rr[yYu]/; // cannot be any of a, t or y + can be a u or y
+// regex = /h[a-zA-Z]rr[yu0-9][0-9]/; // we can have as many character sets as we want
+
+// // Quantifiers - We use {}
+// regex = /har{2}y/; // r can occur exactly 2 times
+// regex = /har{0,2}y/; // r can occur exactly 0 to 2 (0 or 1 or 2) times
+
+// // Groupings  - We use paranthesis for groupings ()
+// regex = /(har){2}([0-9]r){3}/
+
+// // const str = "hirry9 bhai";
+// str = "harrry bhai"
+// str = "harhar1r4r5r bhai";
+
+
+// let result = regex.test(str);
+// console.log(result);
