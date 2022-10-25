@@ -24,15 +24,14 @@
 
 //   console.log(square(2))
 
-        // function a(){
-        //     var b = 10;
-        //     c();
-        //     function c(){
-        //         console.log(b);
-        //     }
-        // }
-        // a();
-
+// function a(){
+//     var b = 10;
+//     c();
+//     function c(){
+//         console.log(b);
+//     }
+// }
+// a();
 
 //    let text = "Hari";
 //    document.getElementById("first").innerHTML = text.length;
@@ -82,7 +81,7 @@
 
 //                fruit.reverse();
 //                document.getElementById("first").innerHTML = fruit;
-// 
+//
 
 // const ranks = [20, 30, 10, 5 , 55,25, 80, 2];
 //                document.getElementById("first").innerHTML = ranks;
@@ -187,13 +186,11 @@
 // }
 // console.log(b);
 
-
 // let a=[1,2,3,4,5,6];
 // let index=3;
 // let b = a.splice(0, index);
 // a = a.concat(b)
 // console.log(a);
-
 
 // let a={
 //     name: "hari",
@@ -213,8 +210,6 @@
 // console.log(a);
 // console.log(b);
 
-
-
 //regEx
 
 // \d	Any digit character
@@ -227,14 +222,12 @@
 // console.log(/[0123456789]/.test("in 1992"));
 // console.log(/[0-9]/.test("in 1992"));
 
-
 // let dateTime = /\d{1,2}-\d{1,2}-\d{4} \d{1,2}:\d{2}/;
 // console.log(dateTime.test("22-9-2022 8:45"));
 
 // let neighbor = /neighbou?r/;
 // console.log(neighbor.test("neighbour"));
 // console.log(neighbor.test("neighbor"));
-
 
 // let reg = /hari/; // This is a regular expression literal in js
 // reg = /hari/g; // g means global
@@ -250,7 +243,7 @@
 // result = reg.exec(s);
 // console.log(result);
 // result = reg.exec(s);
-// console.log(result); 
+// console.log(result);
 
 // if (result) {
 //     console.log(result);
@@ -260,7 +253,7 @@
 
 // 2. test() - Returns true or false
 // let result2 = reg.test(s);
-// console.log(result2); 
+// console.log(result2);
 
 // 3. match() - It will return an array of results or null
 // let result3 = reg.match(s) ---> This is wrong!!
@@ -286,7 +279,7 @@
 // regex = /ha?ri?t/; //? after character means that character is optional
 // regex = /h\*ri/; //escape character
 
-// let str = "h*ri means codewith"; // 
+// let str = "h*ri means codewith"; //
 
 // let result = regex.exec(str);
 // console.log("The result from exec is ", result);
@@ -297,8 +290,6 @@
 // else{
 //     console.log(`The string ${str} does not match the expression ${regex.source}`);
 // }
-
-
 
 // // Character Sets - We use []
 // let regex = /h[a-z]rry/; // can be any character from a to z
@@ -318,6 +309,41 @@
 // str = "harrry bhai"
 // str = "harhar1r4r5r bhai";
 
-
 // let result = regex.test(str);
 // console.log(result);
+
+// let a = function b() {
+//   console.log("Hi bro!");
+// };
+// console.log(a());
+
+//
+
+// a();
+// b();
+// function a() {
+//   console.log("a called");
+// }
+// var b = function () {
+//   console.log("b called");
+// };
+
+// let count = 0;
+// document.getElementById("btn").addEventListener("click", function () {
+//   console.log("button clicked", ++count);
+// });
+
+// console.log("start");
+// setTimeout(function () {
+//   console.log("timeout");
+// }, 2000);
+// console.log("end");
+
+// let startDate = new Date().getTime();
+// let endDate = 0;
+
+// while (endDate < startDate + 5000) {
+//   endDate = new Date().getTime();
+// }
+
+// console.log("while ended");
