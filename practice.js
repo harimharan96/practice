@@ -347,3 +347,23 @@
 // }
 
 // console.log("while ended");
+
+// console.log("start");
+
+// function a() {
+//   console.log("function");
+// }
+// setTimeout(a, 2000);
+
+//finding area of circles for given radius
+
+// const radius = [3, 1, 2, 4];
+// let cirleArea = [];
+// for (let i = 0; i < radius.length; i++) {
+//   area(radius[i]);
+// }
+// function area(x) {
+//   let a = 3.16 * x * x;
+//   cirleArea.push(a);
+// }
+// console.log(cirleArea);
